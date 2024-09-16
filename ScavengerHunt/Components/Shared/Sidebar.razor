@@ -24,30 +24,32 @@
                 </NavLink>
                 <nav class="mt-5 px-2 space-y-1">
 
-                    <NavLink href="counter" ActiveClass="@MobileNavLinkActiveClass" class="@MobileNavLinkClass">
-                        <img class="mr-4 flex-shrink-0 h-6 w-6" src="/img/nav/counter.svg">
-                        Counter
-                    </NavLink>
-                    <NavLink href="weather" ActiveClass="@MobileNavLinkActiveClass" class="@MobileNavLinkClass">
-                        <img class="mr-4 flex-shrink-0 h-6 w-6" src="/img/nav/weather.svg">
-                        Weather
-                    </NavLink>
-                    <NavLink href="todomvc" ActiveClass="@MobileNavLinkActiveClass" class="@MobileNavLinkClass">
-                        <img class="mr-4 flex-shrink-0 h-6 w-6" src="/img/nav/todomvc.svg">
-                        Todos
-                    </NavLink>
-                    <NavLink href="secure/bookings" ActiveClass="@MobileNavLinkActiveClass" class="@MobileNavLinkClass">
-                        <img class="mr-4 flex-shrink-0 h-6 w-6" src="/img/nav/bookings.svg">
-                        Bookings
-                    </NavLink>
-                    <NavLink href="secure/coupons" ActiveClass="@MobileNavLinkActiveClass" class="@MobileNavLinkClass">
-                        <img class="mr-4 flex-shrink-0 h-6 w-6" src="/img/nav/coupon.svg">
-                        Coupons
-                    </NavLink>
-                    <NavLink href="profile" ActiveClass="@MobileNavLinkActiveClass" class="@MobileNavLinkClass">
-                        <img class="mr-4 flex-shrink-0 h-6 w-6" src="/img/nav/profile.svg">
-                        Profile
-                    </NavLink>
+                    <AuthorizeView Roles="@Roles.Admin">
+                        <Authorized>
+                            <NavLink href="locode" ActiveClass="@MobileNavLinkActiveClass" class="@MobileNavLinkClass">
+                                <img class="mr-4 flex-shrink-0 h-6 w-6" src="/img/nav/counter.svg">
+                                Locode
+                            </NavLink>
+                        </Authorized>
+                    </AuthorizeView>
+
+                    <AuthorizeView Roles="@Roles.Staff">
+                        <Authorized>
+                            <NavLink href="scouters" ActiveClass="@MobileNavLinkActiveClass" class="@MobileNavLinkClass">
+                                <img class="mr-4 flex-shrink-0 h-6 w-6" src="/img/nav/counter.svg">
+                                Scouters
+                            </NavLink>
+                        </Authorized>
+                    </AuthorizeView>
+
+                    <AuthorizeView>
+                        <Authorized>
+                            <NavLink href="findings" ActiveClass="@MobileNavLinkActiveClass" class="@MobileNavLinkClass">
+                                <img class="mr-4 flex-shrink-0 h-6 w-6" src="/img/nav/counter.svg">
+                                Findings
+                            </NavLink>
+                        </Authorized>
+                    </AuthorizeView>
                 </nav>
             </div>
         </div>
@@ -68,30 +70,38 @@
                 <div class="ml-2 text-black dark:text-white">Scavenger Hunt</div>
             </NavLink>
             <nav class="mt-5 flex-1 px-2 bg-white dark:bg-black space-y-1">
-                <NavLink href="counter" ActiveClass="@DesktopNavLinkActiveClass" class="@DesktopNavLinkClass">
-                    <img class="mr-4 flex-shrink-0 h-6 w-6" src="/img/nav/counter.svg">
-                    Counter
-                </NavLink>
-                <NavLink href="weather" ActiveClass="@DesktopNavLinkActiveClass" class="@DesktopNavLinkClass">
-                    <img class="mr-4 flex-shrink-0 h-6 w-6" src="/img/nav/weather.svg">
-                    Weather
-                </NavLink>
-                <NavLink href="todomvc" ActiveClass="@DesktopNavLinkActiveClass" class="@DesktopNavLinkClass">
-                    <img class="mr-4 flex-shrink-0 h-6 w-6" src="/img/nav/todomvc.svg">
-                    Todos
-                </NavLink>
-                <NavLink href="secure/bookings" ActiveClass="@DesktopNavLinkActiveClass" class="@DesktopNavLinkClass">
-                    <img class="mr-4 flex-shrink-0 h-6 w-6" src="/img/nav/bookings.svg">
-                    Bookings
-                </NavLink>
-                <NavLink href="secure/coupons" ActiveClass="@DesktopNavLinkActiveClass" class="@DesktopNavLinkClass">
-                    <img class="mr-4 flex-shrink-0 h-6 w-6" src="/img/nav/coupon.svg">
-                    Coupons
-                </NavLink>
-                <NavLink href="profile" ActiveClass="@DesktopNavLinkActiveClass" class="@DesktopNavLinkClass">
-                    <img class="mr-4 flex-shrink-0 h-6 w-6" src="/img/nav/profile.svg">
-                    Profile
-                </NavLink>
+
+                <AuthorizeView Roles="@Roles.Admin">
+                    <Authorized>
+                        <NavLink href="locode" ActiveClass="@DesktopNavLinkActiveClass" class="@DesktopNavLinkClass">
+                            <img class="mr-4 flex-shrink-0 h-6 w-6" src="/img/nav/counter.svg">
+                            Locode
+                        </NavLink>
+                    </Authorized>
+                </AuthorizeView>
+
+                <AuthorizeView Roles="@Roles.Staff">
+                    <Authorized>
+                        <NavLink href="scouters" ActiveClass="@DesktopNavLinkActiveClass" class="@DesktopNavLinkClass">
+                            <img class="mr-4 flex-shrink-0 h-6 w-6" src="/img/nav/counter.svg">
+                            Scouters
+                        </NavLink>
+                    </Authorized>
+                </AuthorizeView>
+
+                <AuthorizeView>
+                    <Authorized>
+                        <NavLink href="findings" ActiveClass="@DesktopNavLinkActiveClass" class="@DesktopNavLinkClass">
+                            <img class="mr-4 flex-shrink-0 h-6 w-6" src="/img/nav/counter.svg">
+                            Findings
+                        </NavLink>
+                        <NavLink href="profile" ActiveClass="@DesktopNavLinkActiveClass" class="@DesktopNavLinkClass">
+                            <img class="mr-4 flex-shrink-0 h-6 w-6" src="/img/nav/profile.svg">
+                            Profile
+                        </NavLink>
+                    </Authorized>
+                </AuthorizeView>
+                
             </nav>
         </div>
     </div>

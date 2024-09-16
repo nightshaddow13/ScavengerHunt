@@ -31,6 +31,7 @@
 
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.*" />
+        <PackageReference Include="MudBlazor" Version="7.8.0" />
         <PackageReference Include="ServiceStack.OrmLite.SqlServer.Data" Version="8.4.0" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.*" />
         <PackageReference Include="ServiceStack.AspNetCore.OpenApi" Version="8.*" />

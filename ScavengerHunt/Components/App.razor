@@ -10,6 +10,7 @@
     <link href="css/highlight.css" rel="stylesheet">
     <link rel="icon" href="/img/blazor.svg" type="image/svg+xml">
     <link rel="icon" type="image/png" href="favicon.png" />
+    <link href="_content/MudBlazor/MudBlazor.min.css" rel="stylesheet" />
     @BlazorHtml.ImportMap(new()
     {
         ["app.mjs"] = ("/mjs/app.mjs", "/mjs/app.mjs"),
@@ -27,6 +28,8 @@
     <script>JS.init({ colorScheme:false })</script>
     <script src="lib/js/highlight.js"></script>
     <script>hljs.highlightAll()</script>
+    <script src="_content/MudBlazor/MudBlazor.min.js"></script>
+    <script src="_content/BrowserInterop/scripts.js"></script>
 </body>
 
 </html>

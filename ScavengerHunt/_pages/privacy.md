@@ -2,7 +2,7 @@
 title: Privacy Policy 
 ---
 
-[Your business name] is committed to providing quality services to you and this policy outlines our ongoing obligations to you in respect of how we manage your Personal Information.
+ScavengerHunt is committed to providing quality services to you and this policy outlines our ongoing obligations to you in respect of how we manage your Personal Information.
 
 We have adopted the Australian Privacy Principles (APPs) contained in the Privacy Act 1988 (Cth) (the Privacy Act). The NPPs govern the way in which we collect, use, disclose, store, secure and dispose of your Personal Information.
 
@@ -46,7 +46,7 @@ When your Personal Information is no longer needed for the purpose for which it 
 Access to your Personal Information
 You may access the Personal Information we hold about you and to update and/or correct it, subject to certain exceptions. If you wish to access your Personal Information, please contact us in writing.
 
-[Your business name] will not charge any fee for your access request, but may charge an administrative fee for providing a copy of your Personal Information.
+ScavengerHunt will not charge any fee for your access request, but may charge an administrative fee for providing a copy of your Personal Information.
 
 In order to protect your Personal Information we may require identification from you before releasing the requested information.
 
@@ -55,15 +55,4 @@ It is an important to us that your Personal Information is up to date. We  will 
 
 Policy Updates
 This Policy may change from time to time and is available on our website.
-
-Privacy Policy Complaints and Enquiries
-If you have any queries or complaints about our Privacy Policy please contact us at:
-
-
-[Your business address]
-
-[Your business email address]
-
-[Your business phone number]
-
  
