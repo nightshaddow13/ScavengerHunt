@@ -6,12 +6,16 @@
 
 <MudText Class="mt-2">Welcome to the digital scavenger hunt! Scroll to the bottom of this page for the rules.</MudText>
 
-@* @if (_username is null)
-{
-    <MudText Class="mt-2">Please login in the upper right hand corner of the app to play!</MudText>
-}
+<AuthorizeView>
+    <Authorized>
 
-@if (_username is not null)
+    </Authorized>
+    <NotAuthorized>
+        <MudText Class="mt-2">Please login in the upper right hand corner of the app to play!</MudText>
+    </NotAuthorized>
+</AuthorizeView>
+
+@* @if (_username is not null)
 {
     <ScavengerHunt.UI.Components.FindCache OnCacheFound="@CacheFound" />
 }

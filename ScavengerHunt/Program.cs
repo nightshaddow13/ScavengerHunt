@@ -9,6 +9,9 @@ using ScavengerHunt.Data;
 using ServiceStack.Blazor;
 using System.Net;
 using ScavengerHunt.ServiceInterface;
+using MudBlazor.Services;
+using MudBlazor;
+using System.Diagnostics.Metrics;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -54,6 +57,18 @@ services.AddLocalStorage();
 // Register all services
 services.AddServiceStack(typeof(MyServices).Assembly);
 
+// Register MudBlazor
+builder.Services.AddMudServices(config =>
+{
+    config.SnackbarConfiguration.PositionClass = Defaults.Classes.Position.BottomLeft;
+    config.SnackbarConfiguration.PreventDuplicates = true;
+    config.SnackbarConfiguration.NewestOnTop = false;
+    config.SnackbarConfiguration.VisibleStateDuration = 10000;
+    config.SnackbarConfiguration.HideTransitionDuration = 500;
+    config.SnackbarConfiguration.ShowTransitionDuration = 500;
+    config.SnackbarConfiguration.SnackbarVariant = Variant.Filled;
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -77,7 +92,7 @@ app.UseAntiforgery();
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode()
     .AddInteractiveWebAssemblyRenderMode()
-    .AddAdditionalAssemblies(typeof(Profile).Assembly);
+    .AddAdditionalAssemblies(typeof(ScavengerHunt.Client._Imports).Assembly);
 
 // Add additional endpoints required by the Identity /Account Razor components.
 app.MapAdditionalIdentityEndpoints();
