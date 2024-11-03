@@ -1,0 +1,63 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+<MudText Typo="Typo.h6">Scavenger Hunt</MudText>
+
+<MudText Class="mt-2">Welcome to the digital scavenger hunt! Scroll to the bottom of this page for the rules.</MudText>
+
+@* <AuthorizeView>
+    <Authorized>
+
+    </Authorized>
+    <NotAuthorized>
+        <MudText Class="mt-2">Please login in the upper right hand corner of the app to play!</MudText>
+    </NotAuthorized>
+</AuthorizeView> *@
+
+@* @if (_username is not null)
+{
+    <ScavengerHunt.UI.Components.FindCache OnCacheFound="@CacheFound" />
+}
+
+<MudGrid>
+    @if (_username is not null)
+    {
+        <MudItem xs="12" md="6" Class="pt-5">
+            <ScavengerHunt.UI.Components.PersonalStats @ref="_personalStats" />
+        </MudItem>
+    }
+
+    <MudItem xs="12" md="6" Class="pt-5">
+        <ScavengerHunt.UI.Components.Leaderboards @ref="_leaderboards" />
+    </MudItem>
+
+</MudGrid> *@
+
+<MudText Typo="Typo.h6" Class="mt-5">Rules and Information</MudText>
+
+<MudText Class="mt-2">
+    There will be many caches hidden around camp with a qr code on them.
+    Click the button to scan a cache and then scan the QR code with your phone to get points.
+    This game is in beta so keep in mind it may not work at any time.
+</MudText>
+
+<MudText Class="mt-2">
+    You can only scan each duck 1 time, the app will not let you scan it more than once.
+    Some caches may be worth 1 point while others may be worth more.
+</MudText>
+
+<MudText Class="mt-2">
+    You must allow the website access to your location and camera to play the game.
+    Please refresh your browser cache if you accidentally deny the permission.
+</MudText>
+
+<MudText Class="mt-2">
+    Contact an adult staff member if you need assistance with your username or password.
+    All information collected is internal and will be deleted following the completion of the event.
+</MudText>
+
+<MudText Class="mt-2">
+    If you are a .NET developer and would like to contribute to projects like this please contact Xavier.
+    His information can be found on the event site and on the tri folds provided during check in.
+</MudText>
