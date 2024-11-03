@@ -3,15 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScavengerHunt", "ScavengerHunt\ScavengerHunt\ScavengerHunt.csproj", "{239036F2-38E5-412A-933F-49AE751B8011}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScavengerHunt", "ScavengerHunt\ScavengerHunt\ScavengerHunt.csproj", "{239036F2-38E5-412A-933F-49AE751B8011}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScavengerHunt.Client", "ScavengerHunt\ScavengerHunt.Client\ScavengerHunt.Client.csproj", "{8CF76AB7-3C9A-4DD8-8401-337F929ABCD8}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScavengerHunt.ServiceInterface", "ScavengerHunt.ServiceInterface\ScavengerHunt.ServiceInterface.csproj", "{2FB895D0-F8AE-43F0-A3DA-666721DEA62E}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScavengerHunt.ServiceModel", "ScavengerHunt.ServiceModel\ScavengerHunt.ServiceModel.csproj", "{E0323EED-EFC4-40BF-A23B-9FCB88436BE1}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScavengerHunt.Tests", "ScavengerHunt.Tests\ScavengerHunt.Tests.csproj", "{5D329C09-7E14-47B1-9329-DBA56EE5C32A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScavengerHunt.Client", "ScavengerHunt\ScavengerHunt.Client\ScavengerHunt.Client.csproj", "{8CF76AB7-3C9A-4DD8-8401-337F929ABCD8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,18 +21,6 @@ Global
 		{8CF76AB7-3C9A-4DD8-8401-337F929ABCD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CF76AB7-3C9A-4DD8-8401-337F929ABCD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CF76AB7-3C9A-4DD8-8401-337F929ABCD8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2FB895D0-F8AE-43F0-A3DA-666721DEA62E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2FB895D0-F8AE-43F0-A3DA-666721DEA62E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2FB895D0-F8AE-43F0-A3DA-666721DEA62E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2FB895D0-F8AE-43F0-A3DA-666721DEA62E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E0323EED-EFC4-40BF-A23B-9FCB88436BE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E0323EED-EFC4-40BF-A23B-9FCB88436BE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E0323EED-EFC4-40BF-A23B-9FCB88436BE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E0323EED-EFC4-40BF-A23B-9FCB88436BE1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5D329C09-7E14-47B1-9329-DBA56EE5C32A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5D329C09-7E14-47B1-9329-DBA56EE5C32A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5D329C09-7E14-47B1-9329-DBA56EE5C32A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5D329C09-7E14-47B1-9329-DBA56EE5C32A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

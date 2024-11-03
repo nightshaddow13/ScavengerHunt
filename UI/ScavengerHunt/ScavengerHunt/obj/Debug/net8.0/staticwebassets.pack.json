@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\xgoss\\source\\repos\\ScavengerHunt\\ScavengerHunt\\ScavengerHunt\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ScavengerHunt.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ScavengerHunt.props",
+      "PackagePath": "build\\ScavengerHunt.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ScavengerHunt.props",
+      "PackagePath": "buildMultiTargeting\\ScavengerHunt.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ScavengerHunt.props",
+      "PackagePath": "buildTransitive\\ScavengerHunt.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
