@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ScavengerHunt")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4d24d98117cad2734db06e917e8703d80b3f3868")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+513b56110a4bab5083f9eaf1cba36b4ed3290928")]
 [assembly: System.Reflection.AssemblyProductAttribute("ScavengerHunt")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ScavengerHunt")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
